@@ -138,4 +138,4 @@ const addNumbers = (...args) => {
     return sum;
 };
 
-console.log(addNumbers(10,14,16,22,1,45));   //108
+console.log(addNumbers(10,14,16,22,1,45));    //108
