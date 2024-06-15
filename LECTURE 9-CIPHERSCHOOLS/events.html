@@ -16,11 +16,13 @@
       <!-- <form> -->
       <input type="text" id="firstName" onchange="upperCase()" />
       <!-- </form> -->
+      <!-- onmouseover="mOver(this)" -->
+       <!-- onmouseout="mOut(this)" -->
       <div
-        onmouseover="mOver(this)"
-        onmouseout="mOut(this)"
+        onmousedown="mDown(this)"
+        onmouseup="mUp(this)"
         style="background-color: red; width: 120px; height: 20px; padding: 40px"
-      >
+        >
         Mouse Over Me
       </div>
     </main>
@@ -35,11 +37,19 @@
         const x = document.getElementById("firstName");
         x.value = x.value.toUpperCase();
       }
-      function mOver(obj){
+      function mOver(obj) {
         obj.innerHTML = "Thank You";
       }
-      function mOut(obj){
+      function mOut(obj) {
         obj.innerHTML = "Mouse Over me.";
+      }
+      function mDown(obj) {
+        obj.style.backgroundColor = "cyan";
+        obj.innerHTML = "Release Me.";
+      }
+      function mUp(obj) {
+        obj.style.backgroundColor = "red";
+        obj.innerHTML = "Thank You.";
       }
     </script>
   </body>
