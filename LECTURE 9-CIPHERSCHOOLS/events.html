@@ -14,8 +14,15 @@
         <p id="demo"></p>
       </div>
       <!-- <form> -->
-        <input type="text" id="firstName" onchange="upperCase()" />
+      <input type="text" id="firstName" onchange="upperCase()" />
       <!-- </form> -->
+      <div
+        onmouseover="mOver(this)"
+        onmouseout="mOut(this)"
+        style="background-color: red; width: 120px; height: 20px; padding: 40px"
+      >
+        Mouse Over Me
+      </div>
     </main>
     <script>
       function changeText(id) {
@@ -27,6 +34,12 @@
       function upperCase() {
         const x = document.getElementById("firstName");
         x.value = x.value.toUpperCase();
+      }
+      function mOver(obj){
+        obj.innerHTML = "Thank You";
+      }
+      function mOut(obj){
+        obj.innerHTML = "Mouse Over me.";
       }
     </script>
   </body>
