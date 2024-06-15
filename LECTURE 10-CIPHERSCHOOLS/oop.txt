@@ -1,3 +1,4 @@
 Objects: Its a unique entity that contains some properties and methods.
 1. Object Literal
 2. Object Constructor
+3. Object.create()

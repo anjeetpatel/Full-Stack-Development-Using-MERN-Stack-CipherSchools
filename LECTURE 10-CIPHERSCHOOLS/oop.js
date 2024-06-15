@@ -15,13 +15,27 @@
 // console.log(person.getFullName());
 // console.log(person.phoneNumber.landline);
 
-function person(firstName, lastName) {
-  this.firstName = firstName;
-  this.lastName = lastName;
-}
+// function person(firstName, lastName) {
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+// }
 
-let person1 = new person("Anjeet", "Patel");
-let person2 = new person("Anurag", "Mishra");
+// let person1 = new person("Anjeet", "Patel");
+// let person2 = new person("Anurag", "Mishra");
 
-console.log(person1.firstName);
-console.log(`${person2.firstName} ${person2.lastName}`);
+// console.log(person1.firstName);
+// console.log(`${person2.firstName} ${person2.lastName}`);
+
+const coder = {
+    isStudying: false,
+    printIntroduction: function(){
+        console.log(`My name is ${this.name}. Am I studying?: ${this.isStudying}`);
+    },
+};
+
+const me = Object.create(coder);
+me.name = "Anjeet Patel";
+
+me.isStudying = true;
+
+me.printIntroduction();
