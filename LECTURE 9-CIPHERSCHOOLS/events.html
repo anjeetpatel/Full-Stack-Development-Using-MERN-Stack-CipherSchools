@@ -13,7 +13,9 @@
         <button onclick="displayDate()">The time is:</button>
         <p id="demo"></p>
       </div>
-      <form action=""></form>
+      <!-- <form> -->
+        <input type="text" id="firstName" onchange="upperCase()" />
+      <!-- </form> -->
     </main>
     <script>
       function changeText(id) {
@@ -21,6 +23,10 @@
       }
       function displayDate() {
         document.getElementById("demo").innerHTML = new Date();
+      }
+      function upperCase() {
+        const x = document.getElementById("firstName");
+        x.value = x.value.toUpperCase();
       }
     </script>
   </body>
