@@ -2,16 +2,6 @@
 import ToDoScreen from "./screen/ToDoScreen";
 
 
-// class App extends Component{
-//     render(){
-//         return(
-//             <>
-//                 <ToDoScreen/>
-//             </>
-//         );
-//     }
-// }
-
 function App(){
     return(
         <ToDoScreen/>

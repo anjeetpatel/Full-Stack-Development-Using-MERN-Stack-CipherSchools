@@ -1,6 +1,5 @@
 import { formatDate } from "../utils/DateUtil";
 
-
 const Task = ({task: {title, description, create_date}})=>{
     return (
         <div className="card">
