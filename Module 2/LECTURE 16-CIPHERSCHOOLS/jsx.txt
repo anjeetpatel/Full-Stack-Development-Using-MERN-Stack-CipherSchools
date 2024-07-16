@@ -1,6 +1,0 @@
-1. JSX looks and behaves LIKE HTML.
-2. JSX can contain 2 things:
-    2.a. HTML tags
-    2.b. React Components
-
-3. JSX allows us to write JS code inside.
