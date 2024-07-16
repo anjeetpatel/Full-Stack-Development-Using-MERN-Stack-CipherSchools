@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  const name = "Sujal";
+  const name = "anjeet";
   return (
     <div>
       <h1

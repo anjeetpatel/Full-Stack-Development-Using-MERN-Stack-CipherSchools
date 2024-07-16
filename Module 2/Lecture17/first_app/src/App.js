@@ -3,7 +3,7 @@ import "./App.css";
 import { Component } from "react";
 
 class App extends Component {
-  name = "Sujal";
+  name = "anjeet";
   render() {
     return (
       <>
@@ -19,7 +19,7 @@ class App extends Component {
 }
 
 // function App() {
-//   const name="Sujal"
+//   const name="anjeet"
 //   return (
 //     <div>
 //       <h1 style={{

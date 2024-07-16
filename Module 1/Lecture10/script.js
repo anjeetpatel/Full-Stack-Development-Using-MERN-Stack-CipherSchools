@@ -1,7 +1,7 @@
 /* Object literal and method*/
 let person = {
-  fname: "Sujal",
-  lname: "Sharma",
+  fname: "anjeet",
+  lname: "patel",
 
   getFullName() {
     return `The person full name is ${person.fname} ${person.lname}`;
@@ -22,7 +22,7 @@ function student(fname, lname) {
   this.lname = lname;
 }
 
-let student1 = new student("Aman", "Sharma");
+let student1 = new student("Aman", "patel");
 let student2 = new student("Arpit", "Kumar");
 
 console.log(`Student first is ${student1.fname} ${student1.lname}`);
@@ -39,7 +39,7 @@ const coder = {
 
 const me = Object.create(coder);
 
-me.name = "Sujal Sharma";
+me.name = "anjeet patel";
 
 me.isStudying = true;
 
@@ -79,7 +79,7 @@ class emp {
   }
 }
 
-const emp1 = new emp("Sujal", "Sharma");
+const emp1 = new emp("anjeet", "patel");
 console.log(emp1.fname);
 emp1.getDetails_NoAccess();
 emp1.getDetails_Access();
@@ -106,6 +106,6 @@ class Student extends Person {
   }
 }
 
-const stu1 = new Student("Sujal", "Sharma", 1);
+const stu1 = new Student("anjeet", "patel", 1);
 console.log(stu1.fname);
 console.log(stu1.getDetails());
