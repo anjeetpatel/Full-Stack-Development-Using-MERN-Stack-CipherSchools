@@ -1,11 +1,13 @@
-@import url("https: //cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css");
+@import url(https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css);
+
 body {
-  margin: 0;
+  margin: 10px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(140, 140, 206);
 }
 
 code {
@@ -13,6 +15,25 @@ code {
     monospace;
 }
 
-.center{
+.center {
   text-align: center;
+}
+
+.btn-addTask {
+  margin-left: 150px;
+  margin-bottom: 10px;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  padding: 3vh 0;
+}
+
+.form {
+  width: 80%;
+  margin: 0 auto;
 }
